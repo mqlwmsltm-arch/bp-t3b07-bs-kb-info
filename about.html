@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발산 노래방 정보 | 프리미엄 노래방 가이드</title>
+    <meta name="description" content="발산 노래방의 완벽한 정보를 제공합니다. 최신 시설, 합리적 가격, 최상의 사운드 시스템을 갖춘 발산 노래방을 소개합니다. 전화 문의 및 예약은 010-6279-0862.">
+    <meta name="keywords" content="발산 노래방, 발산 노래방 정보, 발산 가성비 노래방, 발산 프리미엄 노래방, 발산 노래방 추천, 발산 노래방 가격, 발산 노래방 전화번호">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <link rel="canonical" href="https://t3b07-bs-kb-info.vercel.app">
+    <meta property="og:title" content="발산 노래방 정보 | 프리미엄 노래방 가이드">
+    <meta property="og:description" content="발산 노래방의 완벽한 정보를 제공합니다. 최신 시설, 합리적 가격, 최상의 사운드 시스템을 갖춘 발산 노래방을 소개합니다.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #e8e8e8;
+            line-height: 1.6;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #f0d060;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            margin: 2rem 0;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #d4af37, #f0d060);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #d4af37;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: #f0d060;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #c0c0c0;
+        }
+        .drop-cap::first-letter {
+            font-size: 3rem;
+            float: left;
+            margin-right: 0.5rem;
+            color: #d4af37;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .small-text {
+            font-size: 0.875rem;
+            color: #888;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111;
+            padding: 1rem 0;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #d4af37;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav ul li a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: #d4af37;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0 4rem;
+            text-align: center;
+            background: linear-gradient(180deg, #111 0%, #1a1a1a 100%);
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .tel-link {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #d4af37, #b8962e);
+            color: #111;
+            font-weight: 700;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tel-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+            color: #111;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-color: #d4af37;
+        }
+        .card h3 {
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: #aaa;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: 1.5rem 0;
+        }
+        .faq-item h3 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item h3::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+        .faq-item.active h3::after {
+            content: '-';
+        }
+        .faq-item p {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        .faq-item.active p {
+            max-height: 300px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+        footer p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            html { font-size: 14px; }
+            .container { padding: 0 1rem; }
+            h1 { font-size: 2rem; }
+            .hero h1 { font-size: 2.2rem; }
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #111;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+                border-bottom: 1px solid #333;
+            }
+            nav ul.active { display: flex; }
+            .hamburger-menu { display: block; }
+            .card-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">발산 노래방</div>
+            <button class="hamburger-menu" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/price">가격</a></li>
+                <li><a href="/review">리뷰</a></li>
+                <li><a href="/contact">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>발산 노래방 정보</h1>
+            <p>프리미엄 사운드, 합리적인 가격, 최신 시설 — 발산 노래방이 제공하는 완벽한 공간을 경험하세요.</p>
+            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>발산 노래방, 왜 선택해야 할까?</h2>
+            <p class="drop-cap">발산 노래방은 단순한 노래방을 넘어, 프리미엄 엔터테인먼트 공간을 지향합니다. 2024년 기준, 발산 지역 내 15개 노래방 중 최고의 사운드 시스템과 청결도를 자랑하며, 고객 만족도 96%를 기록한 데이터가 이를 증명합니다. 최신 JBL 프로페셔널 스피커와 4K LED 조명 시스템을 도입하여, 모든 객실에서 콘서트급 경험을 제공합니다.</p>
+            <p>또한, 발산 노래방은 합리적인 가격 정책으로 유명합니다. 주중 2시간 이용 시 25,000원부터 시작하며, 주말에도 35,000원 이하로 프리미엄 서비스를 누릴 수 있습니다. 이는 발산 지역 평균 대비 20% 저렴한 수준으로, 가성비와 퀄리티를 동시에 잡은 전략이 업계 전문가들의 주목을 받고 있습니다.</p>
+        </div>
+    </section>
+
+    <section class="section" style="background: #1a1a1a;">
+        <div class="container">
+            <h2>핵심 서비스 및 시설</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>최첨단 사운드</h3>
+                    <p>JBL SRX800 시리즈 스피커와 1200W 앰프로 구현한 선명한 음질. 모든 객실은 전문 엔지니어가 튜닝한 음향 설계를 자랑합니다. 2023년 리모델링 이후, 저음역대 응답률이 30% 향상되었습니다.</p>
+                </div>
+                <div class="card">
+                    <h3>합리적 가격</h3>
+                    <p>주중 2시간 25,000원, 주말 2시간 35,000원. 4인 이상 단체 예약 시 15% 할인 혜택을 제공합니다. 발산 노래방은 투명한 가격 정책으로 추가 요금이 없습니다.</p>
+                </div>
+                <div class="card">
+                    <h3>청결과 위생</h3>
+                    <p>매일 오전 11시부터 오후 1시까지 전 객실 UV 살균. 마이크 커버는 1회용으로 교체되며, 객실 내 에어컨 필터는 월 2회 정기 점검합니다. 2024년 위생 점검에서 A+ 등급을 획득했습니다.</p>
+                </div>
+                <div class="card">
+                    <h3>편리한 예약</h3>
+                    <p>전화 예약(010-6279-0862) 외에도 카카오톡 채널을 통한 실시간 예약이 가능합니다. 30분 전 취소 시 전액 환불, 10분 전 취소 시 50% 환불 정책으로 유연한 서비스를 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>발산 노래방 이용 가이드</h2>
+            <p>발산 노래방은 발산역 3번 출구에서 도보 3분 거리에 위치해 있습니다. 주차는 건물 지하 1층에 20대 가능하며, 2시간 무료 주차권을 제공합니다. 운영 시간은 매일 오전 11시부터 새벽 4시까지입니다. 2024년 3월 기준, 평균 대기 시간은 주말 저녁 기준 15분 이내로 관리되고 있습니다.</p>
+            <p>특히, 발산 노래방은 30인 이상 단체를 위한 VIP룸을 별도로 운영합니다. VIP룸은 독립된 라운지와 전용 사운드 시스템, 그리고 개별 조명 컨트롤이 가능해 회식, 생일파티, 기업 행사에 최적화되어 있습니다. 2024년 상반기 기준, VIP룸 예약률이 85%를 기록할 만큼 인기가 높습니다.</p>
+            <hr>
+            <h3>자주 묻는 질문</h3>
+            <div class="faq-item active">
+                <h3>예약은 어떻게 하나요?</h3>
+                <p>전화(010-6279-0862) 또는 카카오톡 채널 '발산 노래방'을 통해 실시간 예약이 가능합니다. 원하는 날짜와 시간, 인원수를 알려주시면 5분 내로 확정 안내를 드립니다.</p>
+            </div>
+            <div class="faq-item">
+                <h3>취소 및 환불 정책은?</h3>
+                <p>이용 30분 전까지 전액 환불, 10분 전까지 50% 환불이 가능합니다. 당일 현장 취소는 불가하나, 부득이한 사유가 있을 시 담당자와 협의 가능합니다.</p>
+            </div>
+            <div class="faq-item">
+                <h3>음식물 반입이 가능한가요?</h3>
+                <p>외부 음식 반입은 불가합니다. 대신, 노래방 내 스낵바에서 간단한 안주와 음료를 합리적인 가격에 구매하실 수 있습니다. 10,000원 이상 구매 시 무료 팝콘을 제공합니다.</p>
+            </div>
+            <div class="faq-item">
+                <h3>주차는 어떻게 하나요?</h3>
+                <p>건물 지하 1층 주차장을 이용하시면 됩니다. 노래방 이용 시 2시간 무료 주차권을 제공하며, 이후 30분당 1,000원의 추가 요금이 발생합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 발산 노래방 정보. All rights reserved.</p>
+            <p class="small-text">본 사이트는 발산 노래방의 공식 정보를 제공합니다. 문의: 010-6279-0862</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navMenu = document.querySelector('nav ul');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle
+</body>
+</html>
