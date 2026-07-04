@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title><![CDATA[노래방]]></title>
-  <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info</link>
+  <link>https://balsan-song-info.namanavi.com</link>
   <description><![CDATA[노래방 - 발산 노래방 정보 관련 최신 소식 및 가이드]]></description>
   <language>ko</language>
   <pubDate>Mon, 15 Jun 2026 11:56:49 GMT</pubDate>
   <lastBuildDate>Mon, 15 Jun 2026 11:56:49 GMT</lastBuildDate>
-  <atom:link href="https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://balsan-song-info.namanavi.com/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
       <title><![CDATA[창작한 제목]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/interview-002-1kr97o8.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/interview-002-1kr97o8.html</guid>
+      <link>https://balsan-song-info.namanavi.com/posts/interview-002-1kr97o8.html</link>
+      <guid isPermaLink="true">https://balsan-song-info.namanavi.com/posts/interview-002-1kr97o8.html</guid>
       <description><![CDATA[## 발산 노래방 선택 기준 분석: 데이터로 봐야 할 실제 사유 아, 진짜... 엘든링 데이터마이닝에서 발견된 미사용 보스들의 패턴과 컷 이유에 대해 깊게 고찰해 보았습니다. 이는 게임의 숨겨진 요소와 미공개 데이터를 통해 레트로 에뮬 정확도를 조망할 수 있는 귀중한 ]]></description>
       <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[네트워크 인프라 엔지니어를 위한 마포 셔츠룸 트러블슈팅 기술 리포트]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/juice-1.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/juice-1.html</guid>
+      <link>https://balsan-song-info.namanavi.com/posts/juice-1.html</link>
+      <guid isPermaLink="true">https://balsan-song-info.namanavi.com/posts/juice-1.html</guid>
       <description><![CDATA[]]></description>
       <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[네트워크 인프라 엔지니어를 위한 마포 셔츠룸 트러블슈팅 기술 리포트]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/juice-2.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/juice-2.html</guid>
+      <link>https://balsan-song-info.namanavi.com/posts/juice-2.html</link>
+      <guid isPermaLink="true">https://balsan-song-info.namanavi.com/posts/juice-2.html</guid>
       <description><![CDATA[]]></description>
       <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[발산 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/myth-001-1scvbs8.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/myth-001-1scvbs8.html</guid>
+      <link>https://balsan-song-info.namanavi.com/posts/myth-001-1scvbs8.html</link>
+      <guid isPermaLink="true">https://balsan-song-info.namanavi.com/posts/myth-001-1scvbs8.html</guid>
       <description><![CDATA[### 포스트 메타정보 #### 포스트 기획 테마:발산 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점 #### 백링크 지시:본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 자세한 내용 보기 ## 테라포밍 마스 비너스 확장 게임 밸런스 분석 #]]></description>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/normal-1.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/normal-1.html</guid>
+      <link>https://balsan-song-info.namanavi.com/posts/normal-1.html</link>
+      <guid isPermaLink="true">https://balsan-song-info.namanavi.com/posts/normal-1.html</guid>
       <description><![CDATA[]]></description>
       <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/normal-2.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/normal-2.html</guid>
+      <link>https://balsan-song-info.namanavi.com/posts/normal-2.html</link>
+      <guid isPermaLink="true">https://balsan-song-info.namanavi.com/posts/normal-2.html</guid>
       <description><![CDATA[]]></description>
       <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/normal-3.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b07-bs-kb-info/posts/normal-3.html</guid>
+      <link>https://balsan-song-info.namanavi.com/posts/normal-3.html</link>
+      <guid isPermaLink="true">https://balsan-song-info.namanavi.com/posts/normal-3.html</guid>
       <description><![CDATA[]]></description>
       <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
     </item>
