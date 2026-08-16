@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b07-bs-kb-info</title>
+  <meta name="description" content="t3b07-bs-kb-info에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://balsan-song-info.namanavi.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Reset & Base */
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { font-size: 18px; scroll-behavior: smooth; }
+ body {
+ font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
+ background-color: #1a1a1a;
+ color: #fafaf5;
+ line-height: 1.8;
+ -webkit-font-smoothing: antialiased;
+ }
+ a { color: #c5a880; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+ a:hover { border-bottom-color: #c5a880; }
+ img { max-width: 100%; display: block; }
+ hr { border: none; border-top: 1px solid #c5a880; margin: 72px 0; opacity: 0.3; }
+
+ /* Layout */
+ .container { max-width: 720px; margin: 0 auto; padding: 72px 24px; }
+ .section { margin-bottom: 120px; }
+
+ /* Typography */
+ h1, h2, h3, h4 { font-weight: 400; letter-spacing: 0.05em; }
+ h1 { font-size: 3.2rem; line-height: 1.2; margin-bottom: 24px; }
+ h2 { font-size: 2.2rem; line-height: 1.3; margin-bottom: 48px; border-bottom: 2px solid #c5a880; padding-bottom: 16px; }
+ h3 { font-size: 1.4rem; margin-bottom: 16px; }
+ p { margin-bottom: 24px; font-size: 1.05rem; }
+ .drop-cap::first-letter {
+ font-size: 4rem; float: left; line-height: 1; margin-right: 8px; margin-top: 4px;
+ color: #c5a880; font-family: 'Georgia', serif;
+ }
+ .small-text { font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; }
+
+ /* Hero */
+ .hero {
+ position: relative;
+ min-height: 85vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 40%, #1a1a1a 80%);
+ border-bottom: 2px solid #c5a880;
+ margin-bottom: 120px;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0; width: 100%; height: 100%;
+ background: radial-gradient(ellipse at center 30%, rgba(197, 168, 128, 0.08) 0%, transparent 70%);
+ pointer-events: none;
+ }
+ .hero-content { position: relative; z-index: 2; max-width: 720px; padding: 72px 24px; }
+ .hero h1 { font-size: 4rem; letter-spacing: 0.1em; }
+ .hero p { font-size: 1.2rem; opacity: 0.85; max-width: 540px; margin: 0 auto 32px; }
+ .hero .cta-link {
+ display: inline-block;
+ padding: 16px 48px;
+ border: 2px solid #c5a880;
+ color: #c5a880;
+ font-size: 1rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ background: transparent;
+ transition: background 0.3s, color 0.3s;
+ cursor: pointer;
+ font-family: 'Georgia', serif;
+ }
+ .hero .cta-link:hover { background: #c5a880; color: #1a1a1a; border-bottom-color: #c5a880; }
+
+ /* Navigation */
+ nav {
+ position: fixed;
+ top: 0; left: 0; width: 100%;
+ background: rgba(26, 26, 26, 0.95);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+ z-index: 1000;
+ padding: 16px 24px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ nav .logo { font-size: 1.2rem; letter-spacing: 0.2em; color: #c5a880; border: none; }
+ nav .nav-links { display: flex; gap: 32px; list-style: none; }
+ nav .nav-links a { color: #fafaf5; font-size: 0.9rem; letter-spacing: 0.08em; border: none; }
+ nav .nav-links a:hover { color: #c5a880; }
+ .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+ .hamburger span { width: 28px; height: 2px; background: #fafaf5; display: block; transition: all 0.3s; }
+ .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+ .hamburger.active span:nth-child(2) { opacity: 0; }
+ .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+ @media (max-width: 768px) {
+ nav .nav-links {
+ display: none;
+ position: absolute;
+ top: 100%; left: 0; width: 100%;
+ background: rgba(26, 26, 26, 0.98);
+ flex-direction: column;
+ padding: 24px;
+ gap: 16px;
+ border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+ }
+ nav .nav-links.open { display: flex; }
+ .hamburger { display: flex; }
+ .container { padding: 48px 20px; }
+ h1 { font-size: 2.4rem; }
+ h2 { font-size: 1.8rem; }
+ .hero h1 { font-size: 2.6rem; }
+ .hero { min-height: 60vh; }
+ .hero .cta-link { padding: 14px 32px; font-size: 0.9rem; }
+ .reviews-grid { grid-template-columns: 1fr !important; }
+ .features-grid { grid-template-columns: 1fr !important; }
+ .section { margin-bottom: 80px; }
+ }
+
+ /* Reviews */
+ .reviews-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+ .review-card {
+ border: 1px solid rgba(197, 168, 128, 0.3);
+ padding: 32px;
+ position: relative;
+ }
+ .review-card::before {
+ content: '\201C';
+ font-size: 4rem;
+ color: #c5a880;
+ position: absolute;
+ top: 8px; left: 16px;
+ line-height: 1;
+ opacity: 0.5;
+ font-family: 'Georgia', serif;
+ }
+ .review-card .review-text { font-style: italic; margin-bottom: 16px; line-height: 1.9; }
+ .review-card .review-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; letter-spacing: 0.05em; }
+ .review-card .review-author { color: #c5a880; font-weight: 600; }
+ .review-card .review-date { opacity: 0.6; }
+ .review-card .stars { color: #c5a880; letter-spacing: 4px; }
+
+ /* Features */
+ .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+ .feature-item { border-top: 1px solid rgba(197, 168, 128, 0.2); padding-top: 24px; }
+ .feature-item h3 { letter-spacing: 0.1em; }
+ .feature-item p { font-size: 0.95rem; opacity: 0.8; }
+
+ /* Contact */
+ .contact-block { border: 1px solid #c5a880; padding: 48px; text-align: center; }
+ .contact-block .phone { font-size: 2rem; letter-spacing: 0.1em; color: #c5a880; display: block; margin: 16px 0; }
+ .contact-block .phone:hover { opacity: 0.8; }
+
+ /* Footer */
+ footer { border-top: 1px solid rgba(197, 168, 128, 0.2); padding: 48px 0; margin-top: 72px; text-align: center; }
+ footer p { font-size: 0.85rem; opacity: 0.6; margin-bottom: 0; letter-spacing: 0.05em; }
+
+ /* Utility */
+ .text-center { text-align: center; }
+ .text-gold { color: #c5a880; }
+ .mt-48 { margin-top: 48px; }
+ .mb-48 { margin-bottom: 48px; }
+ .border-gold { border: 1px solid #c5a880; padding: 32px; }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b07-bs-kb-info">
+  <meta property="og:description" content="t3b07-bs-kb-info에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://balsan-song-info.namanavi.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0056.html">발산 노래방 정보 찾는다면 필독 마곡 유흥 추천정보 체크리스트</a>
+        <p class="post-item__summary">발산 노래방 정보 및 지역 유흥 시설을 검색할 때 가장 우선시해야 할 것은 접근성입니다. 역세권에 위치하여 이동이 편리한지, 주변 상권이 안전한지 먼저 살펴야 합니다. 밤늦은 시간까지 운영하는 만큼</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0057.html">발산 노래방 정보 기반으로 알아보는 합정 노래방 추천정보</a>
+        <p class="post-item__summary">친구들과 합정역 인근에서 모임을 하던 중 갑작스럽게 노래를 부르러 가자는 이야기가 나왔습니다. 막상 익숙하지 않은 동네에서 적당한 장소를 찾으려니 어디로 가야 할지 막막한 기분이 들었습니다. 평소 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0058.html">발산 노래방 정보 이용자가 알아두면 좋을 연남 클럽 추천정보</a>
+        <p class="post-item__summary">클럽은 무조건 밤늦게 가야 즐겁다는 생각은 큰 오해입니다. 발산 노래방 정보 데이터를 살펴보면 시간대별로 이용객의 밀도가 크게 달라진다는 점을 알 수 있습니다. 연남동 클럽 역시 개장 직후의 여유로</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0059.html">발산 노래방 정보 기반으로 살펴본 합정 셔츠룸 추천정보</a>
+        <p class="post-item__summary">쾌적한 공간, 세심한 서비스, 그리고 분위기에 걸맞은 음악이 모두 충족되어야 만족스러운 방문이 완성됩니다. 발산 노래방 정보를 익힌 분들은 셔츠룸을 선택할 때도 이러한 기준을 엄격하게 적용하는 경향</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0060.html">발산 노래방 정보 독자가 궁금해할 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">수많은 업체 중 나에게 딱 맞는 가라오케를 찾기 위해 여러분은 무엇을 가장 먼저 확인하십니까. 발산 노래방 정보를 꾸준히 접해온 분들은 아마도 시설의 최신성이나 사운드 시스템을 우선순위에 두실 것입</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0061.html">발산 노래방 정보 기반 상수 마사지 추천정보 안내</a>
+        <p class="post-item__summary">발산 노래방 정보 검색을 즐기는 분들 중 많은 이들이 인근 지역의 피로 회복을 위해 마사지를 찾습니다. 상수 지역의 다양한 업체를 선별하기 위해서는 우선 매장의 운영 이력을 꼼꼼히 살펴보는 과정이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0062.html">발산 노래방 정보와 망원 노래방 추천정보 비교</a>
+        <p class="post-item__summary">발산 노래방 정보를 찾는 분들이라면 홍대 인근인 망원 지역의 노래방 서비스에도 관심이 많으실 것입니다. 노래방을 선택할 때 가장 고민되는 부분은 아무래도 가격과 서비스의 질을 어떻게 조화시킬 것인가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0063.html">발산 노래방 정보로 알아보는 홍대 노래방 추천정보 예약</a>
+        <p class="post-item__summary">발산 노래방 정보를 자주 접하시는 분들이라면 홍대 지역의 활기찬 노래방 문화에도 익숙하실 겁니다. 예약 과정에서 많은 이들이 겪는 실패 사례는 대부분 사전에 필요한 정보를 충분히 확인하지 않는 데서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0064.html">발산 노래방 정보 기반 공덕 셔츠룸 추천정보 확인</a>
+        <p class="post-item__summary">발산 노래방 정보를 찾던 분들께서 공덕 인근의 셔츠룸을 새롭게 알아보는 경우가 많아지고 있습니다. 공덕 지역은 교통이 편리하여 접근성이 뛰어나다는 장점이 있지만, 그만큼 많은 업소가 밀집해 있어 신</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0065.html">발산 노래방 정보 기반 연남 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">친구들과 갑작스러운 저녁 모임이 잡혔을 때, 익숙하지 않은 지역에서의 장소 선택은 꽤 난감한 문제입니다. 특히 발산 노래방 정보를 찾던 분들이 연남 지역으로 이동하게 되면 당황하기 쉬운데, 이는 지</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0066.html">발산 노래방 정보 확인 후 마곡 가라오케 추천정보 활용법</a>
+        <p class="post-item__summary">가라오케 시설은 모두 똑같은 서비스를 제공할 것이라는 생각은 큰 오해입니다. 발산 노래방 정보를 비교하다 보면 유사한 시스템을 갖춘 마곡 지역의 시설들에 관심이 생기기 마련인데, 이때 운영 시간과 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-002-1kr97o8.html">발산 노래방 정보</a>
+        <p class="post-item__summary">발산 지역은 지하철 5호선과 버스 노선이 잘 연결되어 있어 노래방을 찾기에 매우 편리한 곳입니다. 주요 상권과 주거 단지 사이에 위치해 있어 직장인, 학생, 가족 단위 이용객 모두 쉽게 접근할 수 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">발산 노래방 정보</a>
+        <p class="post-item__summary">노래방은 대중적인 문화생활 공간으로, 발산 지역에서도 많은 사람들이 찾는 장소 중 하나입니다. 노래방을 선택할 때는 주변의 편의시설이나 접근성, 실내 환경 등을 종합적으로 고려하는 것이 중요합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">발산 노래방 정보 및 유흥 용어</a>
+        <p class="post-item__summary">노래방을 방문하기 전에 기본적인 유흥 용어에 대해 알아두면 도움이 됩니다. 각 업소마다 다른 운영 방식과 서비스 명칭을 이해하면 더 편리하게 이용할 수 있습니다. 노래방의 기본 구조와 일반적인 용어</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-1scvbs8.html">발산 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점</a>
+        <p class="post-item__summary">2. 관점 차이: - 보드게임 친구: 가장 많이 분실하는 부품 TOP3와 대체 방법 - 보드게임 친구: 각 부품 분실 확률과 재고 관리 방안</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">발산 노래방 정보 및 관련 안내</a>
+        <p class="post-item__summary">발산 지역에서 노래방을 찾고 계신다면, 지역의 다양한 오락 시설 분포에 대한 일반적인 정보를 살펴보는 것이 도움이 됩니다. 특정 업소의 상세 운영 데이터는 정기적으로 변동될 수 있으므로, 공식 채널</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">발산 노래방 정보</a>
+        <p class="post-item__summary">발산 지역에서의 노래방 문화는 단순한 취미 활동을 넘어 지역사회 구성원들의 여가 생활을 풍부하게 하는 중요한 공간으로 자리 잡고 있습니다. 여러 노래방들은 각기 다른 매스와 인테리어 스타일을 보유하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">발산 노래방 정보</a>
+        <p class="post-item__summary">발산 지역의 노래방 업소는 주거와 상업이 혼재된 상권 내에서 각기 다른 특색을 갖고 운영되고 있습니다. 이 지역은 역세권과 인근 주거 단지 사이를 잇는 동선 위에 위치해 있어, 퇴근길 손님과 주말 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
